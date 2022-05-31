@@ -46,7 +46,6 @@ img {
 .container {
   width: 1200px;
   margin: auto;
-  /* outline: 2px solid #2196f3; */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -133,7 +132,6 @@ body {
 .current::after {
   content: "";
   position: absolute;
-  opacity: 0;
   left: 0;
   bottom: 0;
   display: block;
@@ -141,11 +139,8 @@ body {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-  transition: opacity 500ms var(--cubic);
 }
-.current:hover::after {
-  opacity: 1;
-}
+
 .contact-mail,
 .contact-phone {
   font-weight: 500;
@@ -155,6 +150,7 @@ body {
   color: var(--accent-font-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms var(--cubic);
 }
 .contact-mail,
 .contact-phone {
@@ -165,6 +161,7 @@ body {
 }
 .icon {
   margin-right: 10px;
+  transition: fill 250ms var(--cubic);
 }
 .contact-mail:hover,
 .contact-phone:hover {
@@ -177,6 +174,7 @@ body {
 .contact-adress:hover,
 .contact-adress:focus {
   color: var(--accent-color);
+  transition: color 250ms var(--cubic);
 }
 .contact {
   margin-left: auto;
@@ -359,6 +357,8 @@ body {
   align-items: center;
   border: none;
   margin-right: 10px;
+  transition: fill 250ms var(--cubic),
+  background-color 250ms var(--cubic);
 }
 .social-icon-item-last {
   background-color: transparent;
@@ -370,6 +370,8 @@ body {
   justify-content: center;
   align-items: center;
   border: none;
+  transition: fill 250ms var(--cubic),
+  background-color 250ms var(--cubic);
 }
 .social-icon-item:hover,
 .social-icon-item-last:hover {
@@ -404,6 +406,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: fill 250ms var(--cubic),
+  border 250ms var(--cubic);
 }
 .clients-icon-item-last {
   display: flex;
@@ -416,11 +420,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: fill 250ms var(--cubic),
+  border 250ms var(--cubic);
 }
 .clients-icon-item:hover,
 .clients-icon-item-last:hover {
   border: 1px solid var(--accent-color);
   fill: #2196f3;
+  transition: fill 250ms var(--cubic),
+  border 250ms var(--cubic);
 }
 
 /* =============/PORTFOLIO/================ */
@@ -585,6 +593,8 @@ body {
   align-items: center;
   border: none;
   margin-right: 10px;
+  transition: fill 250ms var(--cubic),
+  background-color 250ms var(--cubic);
 }
 .footer-icon-item-last {
   background-color: rgba(255, 255, 255, 0.1);
@@ -596,12 +606,16 @@ body {
   justify-content: center;
   align-items: center;
   border: none;
+  transition: fill 250ms var(--cubic),
+  background-color 250ms var(--cubic);
 }
 .footer-icon-item:hover,
 .footer-icon-item-last:hover {
   background-color: #2196f3;
   fill: #ffffff;
   border: none;
+  transition: fill 250ms var(--cubic),
+  background-color 250ms var(--cubic);
 }
 .footer-block {
   display: flex;
@@ -646,9 +660,6 @@ body {
   margin: 8px 8px auto auto;
   cursor: pointer;
 }
-/* .filter-img {
-  position: relative;;
-} */
 
 .portfolio-link {
   padding: 63px 24px;
@@ -674,4 +685,98 @@ body {
 }
 .filter-img:hover .product-before {
   transform: translateY(0%);
+}
+textarea {
+  resize: none;
+}
+.form-header {
+  font-family: var(--accent-font);
+font-style: normal;
+font-weight: var(--accent-font-weight);
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+margin-bottom: 12px;
+}
+.form {
+  width: 448px;
+  height: 342px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid #2196f3; */
+
+}
+.js-speaker-form {
+}
+.form-field {
+  margin: 0;
+  padding: 0;
+margin-bottom: 10px;
+display: flex;
+flex-direction: column;
+}
+.form-field input, textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+}
+.form-field textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 120px;
+}
+.form-field input::placeholder {
+font-style: normal;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+
+}
+.form-label {
+  margin-bottom: 4px;
+}
+.form-input {
+  padding-top: 12px;
+  padding-left: 16px;
+}
+.modal-btn {
+  display: flex;
+  justify-content: center;
+}
+.form-btn {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  padding: 10px 55px 10px 55px;
+  font-size: var(--secondary-font-size);
+  font-weight: var(--accent-font-weight);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--accent-color-white);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+  border: transparent;
+}
+.form-btn:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+input[type="checkbox"] {
+width: 16px;
+height: 15px;
+}
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conditions {
+font-style: normal;
+line-height: 1.71;
+letter-spacing: 0.03em;
+  text-decoration: underline;
+  color: #2196F3; 
 }

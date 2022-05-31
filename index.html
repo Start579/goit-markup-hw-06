@@ -538,17 +538,51 @@
           </ul>
         </div>
       </div>
+ <!--subscribe-->
+      <div class="subscribe">
+        <p class="block-header">присоединяйтесь</p>
+      </div>
     </footer>
+        <!--modal-window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p></p>
         <button data-modal-close type="button" class="modal-btn">
           <svg width="11" height="11">
             <use href="./images/symbol.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="form js-speaker-form">
+          <h2 class="form-header">
+            Оставьте свои данные, мы вам перезвоним
+          </h2>
+        <div class="form-field">
+          <label for="name" class="form-label">Имя</label>
+      <input class="form-input" type="text" name="name" autofocus />
+    </div>
+    <div class="form-field">
+      <label for="tel" class="form-label">Телефон</label>
+      <input class="form-input" type="tel" name="tel" />
+    </div>
+    <div class="form-field">
+      <label for="mail" class="form-label">Почта</label>
+      <input class="form-input" type="email" name="mail" />
+    </div>
+    <div class="form-field">
+      <label for="textarea" class="form-label">Коментарий</label>
+    <textarea class="form-input" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+  </div>
+  <div class="group">
+<input type="checkbox" name="policy" value="" id="policy" />
+<label for="">Соглашаюсь с рассылкой и принимаю <span class="conditions">Условия договора</span></label>
+</div>
+<div class="modal-btn">
+      <button class="form-btn" type="submit">Отправить</button>
+        </div>
+          </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
-  </body>
+    <!--form-script-->
+  <!-- <script></script>  -->
+    </body>
 </html>
