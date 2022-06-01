@@ -537,10 +537,17 @@
             </li>
           </ul>
         </div>
-      </div>
  <!--subscribe-->
-      <div class="subscribe">
-        <p class="block-header">присоединяйтесь</p>
+        <div class="subscribe">
+          <p class="subscribe-header">подпишитесь на рассылку</p>
+          <div class="subscribe-field">
+            <label for="mail" class="subscribe-label"></label>
+            <input class="subscribe-input" type="email" name="mail"  placeholder="E-mail" />
+            
+            <button class="subscribe-btn" type="submit">Подписаться</button>
+          
+          </div>
+        </div>
       </div>
     </footer>
         <!--modal-window-->
@@ -555,27 +562,44 @@
           <h2 class="form-header">
             Оставьте свои данные, мы вам перезвоним
           </h2>
-        <div class="form-field">
+
+
+
+        <div class="form-fild">
           <label for="name" class="form-label">Имя</label>
-      <input class="form-input" type="text" name="name" autofocus />
+      <span><svg class="icom" width="18" height="18">
+        <use href="./images/symbol.svg#icon-person-black"></use>
+      </svg></span>
+      
+          <input class="form-input" type="text" name="name" autofocus />
     </div>
-    <div class="form-field">
+
+
+
+    <div class="form-fild">
       <label for="tel" class="form-label">Телефон</label>
+      <span class="icom"></span>
       <input class="form-input" type="tel" name="tel" />
     </div>
-    <div class="form-field">
+    <div class="form-fild">
       <label for="mail" class="form-label">Почта</label>
+       </span>
       <input class="form-input" type="email" name="mail" />
     </div>
-    <div class="form-field">
-      <label for="textarea" class="form-label">Коментарий</label>
-    <textarea class="form-input" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+    <div class="form-fild">
+       <label for="textarea" class="form-label">Коментарий</label>
+       <textarea class="form-input" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
   </div>
+
+<!--checkbox-->
   <div class="group">
-<input type="checkbox" name="policy" value="" id="policy" />
-<label for="">Соглашаюсь с рассылкой и принимаю <span class="conditions">Условия договора</span></label>
+  <label class="check-option">
+<input class="check-input" type="checkbox" name="policy" value="" id="policy" />
+<span class="check-box"></span>
+Соглашаюсь с рассылкой и принимаю <span class="conditions">Условия договора</span>
+</label>
 </div>
-<div class="modal-btn">
+<div class="accept-btn">
       <button class="form-btn" type="submit">Отправить</button>
         </div>
           </form>
