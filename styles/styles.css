@@ -698,32 +698,51 @@ line-height: 1.15;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
-margin-bottom: 30px;
+margin-bottom: 12px;
 }
+
 .form {
   width: 448px;
   height: 342px;
   margin-left: auto;
   margin-right: auto;
   /* outline: 1px solid #2196f3; */
+}
+
+.form-icon {
+position: absolute;
+top: 50%;
+left: 12px;
+transform: translateY(-25%);
+display: inline-block;
+width: 20px;
+height: 20px;
+}
+.form-icon:hover {
+fill: #2196f3;
+}
+.form-label {
+  margin-bottom: 4px;
 
 }
-/* .modal-icon {
-  position: absolute;
-  top: 50%;
-  left: 10px; 
-   display: inline-block;
-  transform: translateY(35%);
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m13.996 11.123-1.838-.21a1.44 1.44 0 0 0-1.187.412l-1.332 1.332a10.888 10.888 0 0 1-4.769-4.77L6.21 6.55a1.44 1.44 0 0 0 .412-1.187l-.21-1.824a1.448 1.448 0 0 0-1.44-1.28H3.72c-.818 0-1.498.68-1.448 1.497.384 6.18 5.327 11.116 11.5 11.5.817.05 1.498-.63 1.498-1.448v-1.252a1.434 1.434 0 0 0-1.274-1.432Z' fill='%23212121'/%3E%3C/svg%3E");
-background-repeat: no-repeat; */
-}
 .form-field {
+  position: relative;
   margin: 0;
   padding: 0;
 margin-bottom: 10px;
 display: flex;
 flex-direction: column;
 }
+.form-field:hover input, textarea,
+  .form-field:focus input, textarea {
+  border: 1px solid #2196F3;
+  height: 40px;
+}
+
+/* .form-field:focus-visible textarea {
+  border: 1px solid #2196F3;
+  height: 40px;
+} */
 .form-field input, textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -740,16 +759,16 @@ font-weight: 400;
 line-height: 14px;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
-
 }
 .form-input {
-  /* padding-top: 12px;
-  padding-left: 16px; */
+  padding: 10px 20px;
   width: 448px;
   height: 40px;
-  margin-bottom: 28px;
-  margin-top: 4px;
+  margin-bottom: 10px;
+padding-left: 22px;
 }
+
+
 .accept-btn {
   display: flex;
   justify-content: center;
@@ -850,28 +869,26 @@ height: 15px;
   background-color: var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
+  padding-right: 62px;
+
 }
+.subscribe-btn::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/send.svg");
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
+} 
 .subscribe-icon {
   position: absolute;
   margin-left: 50px;
   fill: #000000;
 }
-.form-label {
-  margin-bottom: 4px;
-  /* position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translateY(-50%); */
-}
 
-.form-fild {
-  position: relative;
-}
-.icom:hover {
-  fill: #2196f3;
-}
-form-input:hover {
-  fill: #2196f3;
-}
+
 
   

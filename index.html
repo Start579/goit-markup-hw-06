@@ -565,28 +565,39 @@
 
 
 
-        <div class="form-fild">
+    <div class="form-field">
           <label for="name" class="form-label">Имя</label>
-      <span><svg class="icom" width="18" height="18">
+        <input 
+          type="text" 
+          class="form-input" 
+          name="name" 
+          id="name"
+          placeholder=" "
+          autofocus 
+          />
+       <span class="form-icon"><svg width="18" height="18">
         <use href="./images/symbol.svg#icon-person-black"></use>
       </svg></span>
-      
-          <input class="form-input" type="text" name="name" autofocus />
     </div>
 
 
 
-    <div class="form-fild">
+    <div class="form-field">
       <label for="tel" class="form-label">Телефон</label>
-      <span class="icom"></span>
+      <span><svg class="form-icon" width="18" height="18">
+        <use href="./images/symbol.svg#icon-phone-black"></use>
+      </svg></span>
       <input class="form-input" type="tel" name="tel" />
     </div>
-    <div class="form-fild">
+    <div class="form-field">
       <label for="mail" class="form-label">Почта</label>
-       </span>
+      <span><svg class="form-icon" width="18" height="18">
+        <use href="./images/symbol.svg#icon-email-black"></use>
+      </svg></span>
       <input class="form-input" type="email" name="mail" />
     </div>
-    <div class="form-fild">
+
+    <div class="form-field">
        <label for="textarea" class="form-label">Коментарий</label>
        <textarea class="form-input" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
   </div>
